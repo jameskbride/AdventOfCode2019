@@ -19,6 +19,12 @@ class Day1FuelCalculatorTests: XCTestCase {
     }
     
     func testGivenALargerMassItCalculatesTheFuelRequirement() {
+        let fuel = calculateFuel(masses: [1969], accountForFuel: true)
+        
+        XCTAssertEqual(fuel, 966)
+    }
+    
+    func testGivenALargerMassAccountingForFuelFuelCostsItCalculatesTheFuelRequirement() {
         let fuel = calculateFuel(masses: [1969])
         
         XCTAssertEqual(fuel, 654)
@@ -31,7 +37,7 @@ class Day1FuelCalculatorTests: XCTestCase {
     }
     
     func testGivenAllMassesItCalculatesTheFuelRequirement() {
-        let masses = [
+        let masses: [Double] = [
         139616,
         148675,
         139706,
