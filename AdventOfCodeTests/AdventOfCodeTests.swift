@@ -13,7 +13,7 @@ import XCTest
 class AdventOfCodeTests: XCTestCase {
 
     func testGivenLowEndMassItCalculatesTheFuelRequirement() {
-        let fuel = calculateFuel(mass: 6)
+        let fuel = calculateFuel(masses: [9])
         
         XCTAssertEqual(fuel, 1)
     }

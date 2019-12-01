@@ -6,6 +6,6 @@
 //  Copyright © 2019 James Kirkbride. All rights reserved.
 //
 
-func calculateFuel(mass: Int) -> Int {
+func calculateFuel(masses: Array<Int>) -> Int {
     return 1
 }
