@@ -10,7 +10,7 @@
 
 import XCTest
 
-class AdventOfCodeTests: XCTestCase {
+class Day1FuelCalculatorTests: XCTestCase {
 
     func testGivenLowEndMassItCalculatesTheFuelRequirement() {
         let fuel = calculateFuel(masses: [9])

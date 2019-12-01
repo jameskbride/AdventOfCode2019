@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE065AAC2393EF22001761E6 /* AdventOfCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AAB2393EF22001761E6 /* AdventOfCode.swift */; };
-		BE065AB92393EF4B001761E6 /* AdventOfCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */; };
+		BE065AAC2393EF22001761E6 /* Day1FuelCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AAB2393EF22001761E6 /* Day1FuelCalculator.swift */; };
+		BE065AB92393EF4B001761E6 /* Day1FuelCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AB82393EF4B001761E6 /* Day1FuelCalculatorTests.swift */; };
 		BE065ABB2393EF4B001761E6 /* libAdventOfCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE065AA82393EF22001761E6 /* libAdventOfCode.a */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +36,9 @@
 
 /* Begin PBXFileReference section */
 		BE065AA82393EF22001761E6 /* libAdventOfCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdventOfCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE065AAB2393EF22001761E6 /* AdventOfCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode.swift; sourceTree = "<group>"; };
+		BE065AAB2393EF22001761E6 /* Day1FuelCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1FuelCalculator.swift; sourceTree = "<group>"; };
 		BE065AB62393EF4B001761E6 /* AdventOfCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeTests.swift; sourceTree = "<group>"; };
+		BE065AB82393EF4B001761E6 /* Day1FuelCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1FuelCalculatorTests.swift; sourceTree = "<group>"; };
 		BE065ABA2393EF4B001761E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 		BE065AAA2393EF22001761E6 /* AdventOfCode */ = {
 			isa = PBXGroup;
 			children = (
-				BE065AAB2393EF22001761E6 /* AdventOfCode.swift */,
+				BE065AAB2393EF22001761E6 /* Day1FuelCalculator.swift */,
 			);
 			path = AdventOfCode;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 		BE065AB72393EF4B001761E6 /* AdventOfCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */,
+				BE065AB82393EF4B001761E6 /* Day1FuelCalculatorTests.swift */,
 				BE065ABA2393EF4B001761E6 /* Info.plist */,
 			);
 			path = AdventOfCodeTests;
@@ -186,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE065AAC2393EF22001761E6 /* AdventOfCode.swift in Sources */,
+				BE065AAC2393EF22001761E6 /* Day1FuelCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE065AB92393EF4B001761E6 /* AdventOfCodeTests.swift in Sources */,
+				BE065AB92393EF4B001761E6 /* Day1FuelCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
