@@ -6,13 +6,13 @@
 //  Copyright © 2019 James Kirkbride. All rights reserved.
 //
 
-func calculateFuel(masses: Array<Int>) -> Int {
+func calculateFuel(masses: Array<Int>, accountForFuel: Bool = false) -> Int {
     let massFuels = masses.map { calculateFuel(mass: $0)}
     
     return massFuels.reduce ( 0, +)
 }
 
-func calculateFuel(mass: Int) -> Int {
+func calculateFuel(mass: Int, accountForFuel: Bool = false) -> Int {
     let fuel = (mass / 3) - 2
     
     return fuel
