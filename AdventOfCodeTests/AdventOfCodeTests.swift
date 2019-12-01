@@ -17,5 +17,17 @@ class AdventOfCodeTests: XCTestCase {
         
         XCTAssertEqual(fuel, 1)
     }
+    
+    func testGivenALargerMassItCalculatesTheFuelRequirement() {
+        let fuel = calculateFuel(masses: [1969])
+        
+        XCTAssertEqual(fuel, 654)
+    }
+    
+    func testGivenTwoMassesItCalculatesTheFuelRequirement() {
+        let fuel = calculateFuel(masses: [12, 14])
+        
+        XCTAssertEqual(fuel, 4)
+    }
 
 }

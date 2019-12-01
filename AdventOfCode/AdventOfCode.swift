@@ -7,5 +7,7 @@
 //
 
 func calculateFuel(masses: Array<Int>) -> Int {
-    return 1
+    let massFuels = masses.map { ($0 / 3) - 2}
+    
+    return massFuels.reduce ( 0, +)
 }
