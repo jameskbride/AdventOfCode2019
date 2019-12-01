@@ -8,7 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		BE065AAC2393EF22001761E6 /* AdventOfCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AAB2393EF22001761E6 /* AdventOfCode.swift */; };
+		BE065AB92393EF4B001761E6 /* AdventOfCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */; };
+		BE065ABB2393EF4B001761E6 /* libAdventOfCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE065AA82393EF22001761E6 /* libAdventOfCode.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE065ABC2393EF4B001761E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE065AA02393EF22001761E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE065AA72393EF22001761E6;
+			remoteInfo = AdventOfCode;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BE065AA62393EF22001761E6 /* CopyFiles */ = {
@@ -25,6 +37,9 @@
 /* Begin PBXFileReference section */
 		BE065AA82393EF22001761E6 /* libAdventOfCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdventOfCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE065AAB2393EF22001761E6 /* AdventOfCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode.swift; sourceTree = "<group>"; };
+		BE065AB62393EF4B001761E6 /* AdventOfCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeTests.swift; sourceTree = "<group>"; };
+		BE065ABA2393EF4B001761E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE065AB32393EF4B001761E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE065ABB2393EF4B001761E6 /* libAdventOfCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BE065AAA2393EF22001761E6 /* AdventOfCode */,
+				BE065AB72393EF4B001761E6 /* AdventOfCodeTests */,
 				BE065AA92393EF22001761E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BE065AA82393EF22001761E6 /* libAdventOfCode.a */,
+				BE065AB62393EF4B001761E6 /* AdventOfCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +85,15 @@
 				BE065AAB2393EF22001761E6 /* AdventOfCode.swift */,
 			);
 			path = AdventOfCode;
+			sourceTree = "<group>";
+		};
+		BE065AB72393EF4B001761E6 /* AdventOfCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE065AB82393EF4B001761E6 /* AdventOfCodeTests.swift */,
+				BE065ABA2393EF4B001761E6 /* Info.plist */,
+			);
+			path = AdventOfCodeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,24 @@
 			productReference = BE065AA82393EF22001761E6 /* libAdventOfCode.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		BE065AB52393EF4B001761E6 /* AdventOfCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE065ABE2393EF4B001761E6 /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */;
+			buildPhases = (
+				BE065AB22393EF4B001761E6 /* Sources */,
+				BE065AB32393EF4B001761E6 /* Frameworks */,
+				BE065AB42393EF4B001761E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE065ABD2393EF4B001761E6 /* PBXTargetDependency */,
+			);
+			name = AdventOfCodeTests;
+			productName = AdventOfCodeTests;
+			productReference = BE065AB62393EF4B001761E6 /* AdventOfCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +145,9 @@
 				ORGANIZATIONNAME = "James Kirkbride";
 				TargetAttributes = {
 					BE065AA72393EF22001761E6 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					BE065AB52393EF4B001761E6 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -111,9 +166,20 @@
 			projectRoot = "";
 			targets = (
 				BE065AA72393EF22001761E6 /* AdventOfCode */,
+				BE065AB52393EF4B001761E6 /* AdventOfCodeTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE065AB42393EF4B001761E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE065AA42393EF22001761E6 /* Sources */ = {
@@ -124,7 +190,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE065AB22393EF4B001761E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE065AB92393EF4B001761E6 /* AdventOfCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE065ABD2393EF4B001761E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE065AA72393EF22001761E6 /* AdventOfCode */;
+			targetProxy = BE065ABC2393EF4B001761E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BE065AAD2393EF22001761E6 /* Debug */ = {
@@ -267,6 +349,42 @@
 			};
 			name = Release;
 		};
+		BE065ABF2393EF4B001761E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X85N53NMAG;
+				INFOPLIST_FILE = AdventOfCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameskbride.AdventOfCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE065AC02393EF4B001761E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X85N53NMAG;
+				INFOPLIST_FILE = AdventOfCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jameskbride.AdventOfCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +402,15 @@
 			buildConfigurations = (
 				BE065AB02393EF22001761E6 /* Debug */,
 				BE065AB12393EF22001761E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE065ABE2393EF4B001761E6 /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE065ABF2393EF4B001761E6 /* Debug */,
+				BE065AC02393EF4B001761E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

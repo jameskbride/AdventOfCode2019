@@ -6,6 +6,6 @@
 //  Copyright © 2019 James Kirkbride. All rights reserved.
 //
 
-class AdventOfCode {
-
+func calculateFuel(mass: Int) -> Int {
+    return 1
 }
